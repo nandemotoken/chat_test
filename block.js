@@ -6,6 +6,6 @@ const Address =  "0x2Ddef8aB2d2f569ab67845075805e6725095e2BA";
 const account = await web3p.eth.getAccounts();
 console.log(account);
 mycontract = await new web3p.eth.Contract(ABI, Address);
-mes = await mycontract.methods.balanceOf(account).call();
+mes = await mycontract.methods.balanceOf(account[0]).call();
 console.log(mes);  
 }
