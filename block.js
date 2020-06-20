@@ -4,5 +4,5 @@ const web3 = new Web3(portis.provider);
 web3.eth.getAccounts((error, accounts) => {
     console.log(accounts);
   });
-  portis.showPortis();
+  portis.provider.enable();
 }
